@@ -34,7 +34,6 @@ const reducer = (state: PersonType[], action: ActionType) => {
 
     case "ORDER":
       //state = state.sort((a, b) => (a.name > b.name) ? 1 : -1);
-
       state = state.sort((a, b) => a.name.localeCompare(b.name));
 
       break;
